@@ -1,6 +1,6 @@
 <template>
   <q-page class="q-pa-md">
-    <q-table title="Products table" :columns="columns" :rows="rows" row-key="id" bordered>
+    <q-table flat title="Products table" :columns="columns" :rows="rows" row-key="id" bordered>
       <template v-slot:body-cell="props">
         <q-td :props="props">
           {{ props.row[props.col.name] || '' }}
